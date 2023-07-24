@@ -1,39 +1,40 @@
-/* CSS HEX 
+/*
+CSS HEX 
 --white: #ffffffff;
 --cambridge-blue: #81a684ff;
 --viridian: #57886cff;
 --feldgrau: #466060ff;
 --rich-black: #0e0f19ff;
 
-/* CSS HSL 
+CSS HSL 
 --white: hsla(0, 0%, 100%, 1);
 --cambridge-blue: hsla(125, 17%, 58%, 1);
 --viridian: hsla(146, 22%, 44%, 1);
 --feldgrau: hsla(180, 16%, 33%, 1);
 --rich-black: hsla(235, 28%, 8%, 1);
 
-/* SCSS HEX 
+SCSS HEX 
 $white: #ffffffff;
 $cambridge-blue: #81a684ff;
 $viridian: #57886cff;
 $feldgrau: #466060ff;
 $rich-black: #0e0f19ff;
 
-/* SCSS HSL 
+SCSS HSL 
 $white: hsla(0, 0%, 100%, 1);
 $cambridge-blue: hsla(125, 17%, 58%, 1);
 $viridian: hsla(146, 22%, 44%, 1);
 $feldgrau: hsla(180, 16%, 33%, 1);
 $rich-black: hsla(235, 28%, 8%, 1);
 
-/* SCSS RGB 
+SCSS RGB 
 $white: rgba(255, 255, 255, 1);
 $cambridge-blue: rgba(129, 166, 132, 1);
 $viridian: rgba(87, 136, 108, 1);
 $feldgrau: rgba(70, 96, 96, 1);
 $rich-black: rgba(14, 15, 25, 1);
 
-/* SCSS Gradient 
+SCSS Gradient 
 $gradient-top: linear-gradient(0deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
 $gradient-right: linear-gradient(90deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
 $gradient-bottom: linear-gradient(180deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
@@ -51,6 +52,8 @@ $gradient-radial: radial-gradient(#ffffffff, #81a684ff, #57886cff, #466060ff, #0
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: #FFFFFF;
+    color: #0e0f19ff;
 }
 
 h1 {
