@@ -48,28 +48,10 @@ $gradient-radial: radial-gradient(#ffffffff, #81a684ff, #57886cff, #466060ff, #0
 */
 
 
-
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #FFFFFF;
-    color: #0e0f19ff;
-}
-
-h1 {
-    text-align: center;
-}
-
-textarea {
-    width: 100%;
-}
-
-button {
-    margin-top: 10px;
-}
-
-#output {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
