@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.page-1 {
+	height: 100vh;
+	width: 100vw;
+	background: #f00;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-2 {
+	height: 100vh;
+	width: 100vw;
+	background: #0f0;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-3 {
+	height: 100vh;
+	width: 100vw;
+	background: #00f;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.controls {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+}
+
+.controls button {
+	transition: all 0.2s ease;
+	background-color: #fff;
+	border: 0;
+	padding: 4px 8px;
+	border-radius: 2px;
+}
+
+.controls button:hover {
+	background-color: #eee;
+}
