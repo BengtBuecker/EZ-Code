@@ -95,9 +95,11 @@ ul li a {
 }
 
 
+
 .logo img{
   width: auto;
   height: 50px;
+  margin-left: 20px;
 }
 
 .main{
