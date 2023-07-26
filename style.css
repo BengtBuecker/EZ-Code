@@ -55,3 +55,11 @@ $gradient-radial: radial-gradient(#ffffffff, #81a684ff, #57886cff, #466060ff, #0
   'GRAD' 0,
   'opsz' 48
 }
+
+/* Allgemeine Stile */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
