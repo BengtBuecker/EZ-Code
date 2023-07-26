@@ -1,0 +1,152 @@
+/* style.css */
+
+/* Reset default margin and padding for the whole document */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and text color for the body */
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header navigation */
+  header {
+    background-color: #0075c1;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo img {
+    max-height: 60px;
+    max-width: 200px;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header ul li {
+    margin-left: 20px;
+  }
+  
+  header ul li:first-child {
+    margin-left: 0;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the main section */
+  main {
+    padding: 20px;
+  }
+  
+  /* Style the first article section with the text and the arrow */
+  article#home-1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #0075c1;
+    color: #fff;
+  }
+  
+  article#home-1 h1 {
+    font-family: 'Sofia', cursive;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  article#home-1 .durchstreichen {
+    text-decoration: line-through;
+  }
+  
+  article#home-1 .font-effect-fire {
+    font-family: 'Sofia', cursive;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #e25822;
+  }
+  
+  article#home-1 .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 48px;
+    margin-top: 20px;
+  }
+  
+  /* Style the second article section with the two columns */
+  article.home-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  article.home-2 .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  article.home-2 .column {
+    flex-basis: 45%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  article.home-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  article.home-2 h2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  article.home-2 p {
+    margin-top: 10px;
+  }
+  
+  /* Style the third article section */
+  article.digital-explorer-home-3 {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #0075c1;
+    color: #fff;
+  }
+  
+  article.digital-explorer-home-3 svg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+  
+  article.digital-explorer-home-3 p {
+    font-size: 18px;
+  }
+  
+  /* Add responsive styles */
+  @media (max-width: 768px) {
+    article.home-2 .column {
+      flex-basis: 100%;
+    }
+  }
+  

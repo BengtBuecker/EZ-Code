@@ -108,9 +108,58 @@ ul li a {
 #home-1{
   font-size: 70px;
   line-height: 100px;
+  max-width: 700px;
+  margin-left: 50px;
 }
 
 #grün-kursiv{
   font-family: "Sofia", sans-serif;
   font-style: italic;
+}
+
+.durchstreichen{
+  text-decoration: line-through solid red;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.material-symbols-outlined {
+  color: #466060ff;
+}
+
+article.home-2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 20px;
+  hyphens: auto; 
+	text-align: justify;
+  margin-bottom: 20px;
+}
+
+article.home-2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
