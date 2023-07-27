@@ -155,9 +155,13 @@ ul li a {
 
 .row{
   align-items: center;
+  justify-content: center;
+
 }
 
 .column {
+  display: flex;
+  align-items: center;
   float: left;
   width: 45%;
   padding: 20px;
