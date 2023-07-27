@@ -15,11 +15,15 @@ function explainCode() {
 }
 
 function getExplanation(code) {
-    // Verwende die Chat-GPT API oder eine andere API deiner Wahl, um den Code zu erklären
-    // Führe den API-Aufruf durch und gib die erklärende Antwort zurück
-
-    // Beispiel:
-    var response = "Dies ist eine Erklärung für den gegebenen Code.";
 
     return response;
+}
+
+let currentPage = 0
+
+const nextPage = () => {
+	console.log('nextPage')
+	currentPage++
+	const page = document.querySelector(`.page-${currentPage}`)
+	page.scrollIntoView({ behavior: 'smooth' })
 }

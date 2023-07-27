@@ -124,28 +124,10 @@ ul li a {
 }
 
 .center {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-.material-symbols-outlined {
-  color: #466060ff;
-}
-
-article.home-2{
-  display: flex;
-  justify-content: space-between;
-}
-
-.column {
-  float: left;
-  width: 45%;
-  padding: 20px;
-  hyphens: auto; 
-	text-align: justify;
-  margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .material-symbols-outlined {
@@ -158,13 +140,42 @@ article.home-2{
   	'opsz' 48;
 }
 
-.home-2 {
-	height: 100vh;
+.home-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
 }
+
+.home-2 img{
+  width: 50%;
+  height: auto;
+}
+
+.row{
+  align-items: center;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 20px;
+  hyphens: auto; 
+	text-align: justify;
+}
+
 
 .digital-explorer-home-3 {
 	height: 100vh;
 	width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.dig-logo{
+  width: 70%;
+  height: auto;
 }
 
 @media screen and (max-width: 600px) {
