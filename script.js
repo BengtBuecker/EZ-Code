@@ -1,3 +1,5 @@
+
+
 function explainCode() {
     var code = document.getElementById("codeInput").value;
     var lines = code.split("\n");
@@ -19,11 +21,3 @@ function getExplanation(code) {
     return response;
 }
 
-let currentPage = 0
-
-const nextPage = () => {
-	console.log('nextPage')
-	currentPage++
-	const page = document.querySelector(`.page-${currentPage}`)
-	page.scrollIntoView({ behavior: 'smooth' })
-}
