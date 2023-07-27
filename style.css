@@ -56,6 +56,14 @@ $gradient-radial: radial-gradient(#ffffffff, #81a684ff, #57886cff, #466060ff, #0
   'opsz' 48
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 /* Allgemeine Stile */
 body {
   font-family: Arial, Helvetica, sans-serif;
