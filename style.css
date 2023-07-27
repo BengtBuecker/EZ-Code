@@ -107,11 +107,11 @@ ul li a {
   margin: 0;
 }
 
-#home-1{
-  font-size: 70px;
-  line-height: 100px;
-  max-width: 700px;
-  margin-left: 50px;
+#home-1 {
+	height: 100vh;
+	width: 100vw;
+	font-size: 70px;
+	line-height: 100px;
 }
 
 #grün-kursiv{
@@ -148,16 +148,23 @@ article.home-2{
   margin-bottom: 20px;
 }
 
-article.home-2 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+.material-symbols-outlined {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-variation-settings:
+  	'FILL' 0,
+  	'wght' 700,
+  	'GRAD' 0,
+  	'opsz' 48;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.home-2 {
+	height: 100vh;
+}
+
+.digital-explorer-home-3 {
+	height: 100vh;
+	width: 100vw;
 }
 
 @media screen and (max-width: 600px) {
