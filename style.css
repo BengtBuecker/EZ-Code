@@ -51,6 +51,7 @@ $gradient-radial: radial-gradient(#ffffffff, #81a684ff, #57886cff, #466060ff, #0
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*border: 1px solid red;*/
 }
 
 /* Allgemeine Stile */
@@ -192,16 +193,34 @@ ul li a {
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.dig-logo {
-  width: 70%;
-  height: auto;
-}
 
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
+}
+
+.row-digexp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-digexp {
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 50%;
+  padding: 20px;
+  hyphens: auto;
+  text-align: justify;
+}
+
+.column-digexp img {
+  width: 100%;
+  height: auto;
 }
