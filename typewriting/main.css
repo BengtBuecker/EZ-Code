@@ -1,0 +1,45 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+   }
+
+   nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+  }
+  
+  
+  /* Styling für die <ul>-Liste (Enthält die Links) */
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  /* Styling für die <li>-Elemente (Einzelne Listenelemente) */
+  ul li {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  /* Styling für die Links */
+  ul li a {
+    text-decoration: none;
+    color: #333; /* Textfarbe anpassen */
+  }
+
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
