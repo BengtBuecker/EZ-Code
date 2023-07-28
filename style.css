@@ -96,7 +96,8 @@ ul li a {
 .logo img{
   width: auto;
   height: 40px;
-  margin-left: 20px;S
+  margin-left: 20px;
+  align-items: baseline;
 }
 
 .main{
