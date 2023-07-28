@@ -156,7 +156,7 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .home-2 {
@@ -172,6 +172,11 @@ ul li a {
 .home-2 img {
   width: 50%;
   height: auto;
+  transition: transform .2s;
+}
+
+.home-2 img:hover {
+  transform: scale(1.06);
 }
 
 .row {
@@ -214,7 +219,7 @@ ul li a {
   display: flex;
   align-items: center;
   float: left;
-  width: 50%;
+  width: 45%;
   padding: 20px;
   hyphens: auto;
   text-align: justify;
@@ -223,4 +228,27 @@ ul li a {
 .column-digexp img {
   width: 100%;
   height: auto;
+  transition: transform .2s;
+}
+
+.column-digexp img:hover {
+  transform: scale(1.06);
+}
+
+.controls {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+}
+
+.controls button {
+	transition: all 0.2s ease;
+	background-color: #fff;
+	border: 0;
+	padding: 4px 8px;
+	border-radius: 2px;
+}
+
+.controls button:hover {
+	background-color: #eee;
 }
