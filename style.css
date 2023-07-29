@@ -65,7 +65,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
 }
 
 /* Allgemeine Styling für das <nav>-Element */
@@ -133,13 +132,11 @@ ul li a {
   align-items: baseline;
 }
 
+
 .main {
   padding: 0;
   margin: 0;
-  scroll-snap-type: x mandatory;  
-  display: flex;
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
+  
 }
 
 #home-1 {
@@ -149,8 +146,6 @@ ul li a {
   line-height: 100px;
   margin-top: 10%;
   margin-left: 15px;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 #grün-kursiv {
@@ -178,8 +173,6 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .home-2 img {
@@ -213,8 +206,6 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 
