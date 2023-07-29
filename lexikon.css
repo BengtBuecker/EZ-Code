@@ -1,0 +1,218 @@
+/*
+CSS HEX 
+--white: #ffffffff;
+--cambridge-blue: #81a684ff;
+--viridian: #57886cff;
+--feldgrau: #466060ff;
+--rich-black: #0e0f19ff;
+
+CSS HSL 
+--white: hsla(0, 0%, 100%, 1);
+--cambridge-blue: hsla(125, 17%, 58%, 1);
+--viridian: hsla(146, 22%, 44%, 1);
+--feldgrau: hsla(180, 16%, 33%, 1);
+--rich-black: hsla(235, 28%, 8%, 1);
+
+SCSS HEX 
+$white: #ffffffff;
+$cambridge-blue: #81a684ff;
+$viridian: #57886cff;
+$feldgrau: #466060ff;
+$rich-black: #0e0f19ff;
+
+SCSS HSL 
+$white: hsla(0, 0%, 100%, 1);
+$cambridge-blue: hsla(125, 17%, 58%, 1);
+$viridian: hsla(146, 22%, 44%, 1);
+$feldgrau: hsla(180, 16%, 33%, 1);
+$rich-black: hsla(235, 28%, 8%, 1);
+
+SCSS RGB 
+$white: rgba(255, 255, 255, 1);
+$cambridge-blue: rgba(129, 166, 132, 1);
+$viridian: rgba(87, 136, 108, 1);
+$feldgrau: rgba(70, 96, 96, 1);
+$rich-black: rgba(14, 15, 25, 1);
+
+SCSS Gradient 
+$gradient-top: linear-gradient(0deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-right: linear-gradient(90deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-bottom: linear-gradient(180deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-left: linear-gradient(270deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-top-right: linear-gradient(45deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-bottom-right: linear-gradient(135deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-top-left: linear-gradient(225deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-bottom-left: linear-gradient(315deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-radial: radial-gradient(#ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+
+/* Allgemeine Stile */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Allgemeine Styling für das <nav>-Element */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 50px;
+}
+
+/* Styling für die <ul>-Liste (Enthält die Links) */
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.dropdown-content a:hover {
+  font-size: 110%;
+}
+
+/* Styling für die <li>-Elemente (Einzelne Listenelemente) */
+ul li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Styling für die Links */
+ul li a {
+  text-decoration: none;
+  color: #333; /* Textfarbe anpassen */
+}
+
+.logo img {
+  width: auto;
+  height: 40px;
+  margin-left: 20px;
+  align-items: baseline;
+}
+
+.einleitung {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.sucher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+	margin: 50px 0;
+	background: none;
+	border-bottom: 1px solid #57886cff;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 200px;
+	height: 30px;
+}
+
+input:focus {
+	outline: none;
+	border-bottom: 3px solid #57886cff;
+	color: #57886cff;
+}
+
+::-webkit-input-placeholder {
+	color: #57886cff;
+	font-weight: bold;
+}
+
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: #57886cff;
+	font-weight: bold;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #57886cff;
+	font-weight: bold;
+}
+
+:-ms-input-placeholder {
+	color: #57886cff;
+	font-weight: bold;
+}
+
+button {
+	width: 50px;
+	height: 50px;
+	background: none;
+	border: none;
+	position: absolute;
+	top: 200px;
+	left: 275px;
+}
+
+button:focus {
+	outline: none;
+}
+
+.fas {
+	color: #57886cff;
+	font-size: 2em;
+}
+
+.ergebnisse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ergebnisse ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	hyphens: auto; 
+	text-align: justify
+}
