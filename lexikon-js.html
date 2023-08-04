@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lexikon.css" />
+    <title>Lexikon-js</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html" class="logo"><img
+                    src="Bilder/ez-code-high-resolution-logo-color-on-transparent-background.png"
+                    alt="EZ-Code Logo" /></a>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Lexikon</a>
+                    <ul class="dropdown-content">
+                        <li><a href="lexikon.html">CSS</a></li>
+                        <li><a href="lexikon-html.html">html</a></li>
+                        <li><a href="lexikon-js.html">java script</a></li>
+                    </ul>
+                </li>
+                <li><a href="uebersetzer.html">Übersetzer</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="einleitung">JavaScript-Lexikon</section>
+        <section class="sucher">
+            <input type="text" id="searchInput" placeholder="Suche nach js-Befehlen..." />
+            <button><i class="fas fa-search"></i></button>
+            <script src="search.js"></script>
+        </section>
+        <section class="ergebnisse">
+            <ul id="commandList">
+                <li><strong>console.log():</strong> Gibt eine Nachricht in der Entwicklerkonsole aus.</li>
+                <li><strong>alert():</strong> Zeigt eine Benachrichtigung mit einer Nachricht an.</li>
+                <li><strong>prompt():</strong> Zeigt einen Dialog zur Eingabe von Daten an.</li>
+                <li><strong>confirm():</strong> Zeigt einen Bestätigungsdialog mit OK/Abbrechen-Optionen an.</li>
+                <li><strong>document.getElementById():</strong> Ruft ein HTML-Element über seine ID ab.</li>
+                <li><strong>document.querySelector():</strong> Ruft das erste passende HTML-Element über einen
+                    CSS-Selektor ab.</li>
+                <li><strong>addEventListener():</strong> Fügt einen Ereignislistener zu einem Element hinzu.</li>
+                <li><strong>function functionName():</strong> Definiert eine benannte JavaScript-Funktion.</li>
+                <li><strong>if-else:</strong> Führt Code aus, wenn eine Bedingung wahr ist, andernfalls wird
+                    alternativer Code ausgeführt.</li>
+                <li><strong>for loop:</strong> Führt Code in einer Schleife eine bestimmte Anzahl von Malen aus.</li>
+                <li><strong>while loop:</strong> Führt Code in einer Schleife aus, solange eine Bedingung wahr ist.</li>
+                <li><strong>switch:</strong> Auswahlanweisung, die verschiedene Codezweige basierend auf einem Ausdruck
+                    ausführt.</li>
+                <li><strong>typeof:</strong> Ermittelt den Datentyp eines Werts.</li>
+                <li><strong>parseInt():</strong> Konvertiert eine Zeichenkette in eine ganze Zahl.</li>
+                <li><strong>parseFloat():</strong> Konvertiert eine Zeichenkette in eine Fließkommazahl.</li>
+                <li><strong>String():</strong> Konvertiert einen Wert in eine Zeichenkette.</li>
+                <li><strong>Number():</strong> Konvertiert einen Wert in eine Zahl.</li>
+                <li><strong>Array:</strong> Ein JavaScript-Objekt zur Speicherung von Listen von Werten.</li>
+                <li><strong>Object:</strong> Ein generisches JavaScript-Objekt.</li>
+                <li><strong>JSON.parse():</strong> Wandelt eine JSON-Zeichenkette in ein JavaScript-Objekt um.</li>
+                <li><strong>JSON.stringify():</strong> Wandelt ein JavaScript-Objekt in eine JSON-Zeichenkette um.</li>
+                <li><strong>this:</strong> Verweist auf das aktuelle Objekt oder den aktuellen Kontext.</li>
+                <li><strong>new:</strong> Erstellt eine Instanz eines Objekts oder einer Konstruktorfunktion.</li>
+                <li><strong>return:</strong> Gibt einen Wert aus einer Funktion zurück.</li>
+                <li><strong>typeof:</strong> Ermittelt den Datentyp eines Werts.</li>
+                <li><strong>instanceof:</strong> Überprüft, ob ein Objekt eine Instanz einer bestimmten Klasse oder
+                    eines Konstruktors ist.</li>
+                <li><strong>Math.random():</strong> Gibt eine zufällige Fließkommazahl zwischen 0 (inklusive) und 1
+                    (exklusive) zurück.</li>
+                <li><strong>Math.floor():</strong> Rundet eine Fließkommazahl auf die nächstkleinere ganze Zahl ab.</li>
+                <li><strong>Math.ceil():</strong> Rundet eine Fließkommazahl auf die nächsthöhere ganze Zahl auf.</li>
+                <li><strong>Math.round():</strong> Rundet eine Fließkommazahl auf die nächstgelegene ganze Zahl.</li>
+                <li><strong>Math.min():</strong> Gibt den kleinsten Wert von angegebenen Zahlen zurück.</li>
+                <li><strong>Math.max():</strong> Gibt den größten Wert von angegebenen Zahlen zurück.</li>
+                <li><strong>Math.abs():</strong> Gibt den absoluten Wert einer Zahl zurück.</li>
+                <li><strong>Math.pow():</strong> Gibt eine Zahl hoch eine Exponentenzahl zurück.</li>
+                <li><strong>Math.sqrt():</strong> Gibt die Quadratwurzel einer Zahl zurück.</li>
+                <li><strong>Math.random():</strong> Gibt eine zufällige Fließkommazahl zwischen 0 (inklusive) und 1
+                    (exklusive) zurück.</li>
+                <li><strong>Date:</strong> Ein JavaScript-Objekt zur Arbeit mit Datums- und Zeitwerten.</li>
+                <li><strong>new Date():</strong> Erstellt eine neue Instanz des Date-Objekts, das das aktuelle Datum und
+                    die Uhrzeit enthält.</li>
+                <li><strong>Date.now():</strong> Gibt die Anzahl der Millisekunden seit dem 1. Januar 1970 (UNIX-Zeit)
+                    zurück.</li>
+                <li><strong>String.prototype.length:</strong> Gibt die Länge einer Zeichenkette zurück.</li>
+                <li><strong>String.prototype.indexOf():</strong> Gibt den Index des ersten Vorkommens einer Zeichenkette
+                    in einer anderen Zeichenkette zurück.</li>
+                <li><strong>String.prototype.slice():</strong> Extrahiert einen Teil einer Zeichenkette und gibt sie als
+                    neue Zeichenkette zurück.</li>
+                <li><strong>String.prototype.substr():</strong> Extrahiert eine angegebene Anzahl von Zeichen aus einer
+                    Zeichenkette, beginnend an einem bestimmten Index.</li>
+                <li><strong>String.prototype.replace():</strong> Ersetzt Teil einer Zeichenkette durch eine andere
+                    Zeichenkette.</li>
+                <li><strong>String.prototype.toLowerCase():</strong> Konvertiert eine Zeichenkette in Kleinbuchstaben.
+                </li>
+                <li><strong>String.prototype.toUpperCase():</strong> Konvertiert eine Zeichenkette in Großbuchstaben.
+                </li>
+                <li><strong>String.prototype.split():</strong> Teilt eine Zeichenkette in ein Array von
+                    Teilzeichenketten auf.</li>
+                <li><strong>Array.prototype.length:</strong> Gibt die Länge eines Arrays zurück.</li>
+                <li><strong>Array.prototype.push():</strong> Fügt Elemente am Ende eines Arrays hinzu.</li>
+                <li><strong>Array.prototype.pop():</strong> Entfernt das letzte Element eines Arrays und gibt es zurück.
+                </li>
+                <li><strong>Array.prototype.shift():</strong> Entfernt das erste Element eines Arrays und gibt es
+                    zurück.</li>
+                <li><strong>Array.prototype.unshift():</strong> Fügt Elemente am Anfang eines Arrays hinzu.</li>
+                <li><strong>Array.prototype.slice():</strong> Extrahiert eine Teilmenge von Elementen aus einem Array
+                    und gibt sie als neues Array zurück.</li>
+                <li><strong>Array.prototype.splice():</strong> Entfernt, ersetzt oder fügt Elemente an beliebiger
+                    Position in einem Array ein.</li>
+                <li><strong>Array.prototype.join():</strong> Verbindet die Elemente eines Arrays zu einer Zeichenkette.
+                </li>
+                <li><strong>Array.prototype.indexOf():</strong> Gibt den Index des ersten Vorkommens eines Elements in
+                    einem Array zurück.</li>
+                <li><strong>Array.prototype.lastIndexOf():</strong> Gibt den Index des letzten Vorkommens eines Elements
+                    in einem Array zurück.</li>
+                <li><strong>Array.prototype.forEach():</strong> Führt eine Funktion für jedes Element in einem Array
+                    aus.</li>
+                <li><strong>Array.prototype.map():</strong> Erzeugt ein neues Array, indem eine Funktion auf jedes
+                    Element im ursprünglichen Array angewendet wird.</li>
+                <li><strong>Array.prototype.filter():</strong> Erzeugt ein neues Array mit Elementen, die eine
+                    angegebene Bedingung erfüllen.</li>
+                <li><strong>Array.prototype.reduce():</strong> Reduziert die Elemente eines Arrays auf einen einzigen
+                    Wert mit einer akkumulierten Funktion.</li>
+                <li><strong>Array.prototype.sort():</strong> Sortiert die Elemente eines Arrays.</li>
+                <li><strong>Array.prototype.reverse():</strong> Dreht die Reihenfolge der Elemente eines Arrays um.</li>
+                <li><strong>Array.isArray():</strong> Überprüft, ob ein Wert ein Array ist.</li>
+                <li><strong>Object.keys():</strong> Gibt ein Array zurück, das die Eigenschaftennamen eines Objekts
+                    enthält.</li>
+                <li><strong>Object.values():</strong> Gibt ein Array zurück, das die Werte der Eigenschaften eines
+                    Objekts enthält.</li>
+                <li><strong>Object.entries():</strong> Gibt ein Array von Arrays zurück, die jeweils ein
+                    Schlüssel-Wert-Paar eines Objekts darstellen.</li>
+                <li><strong>Object.prototype.hasOwnProperty():</strong> Überprüft, ob ein Objekt eine bestimmte
+                    Eigenschaft direkt enthält.</li>
+                <li><strong>Object.prototype.toString():</strong> Gibt eine Zeichenkette zurück, die den Typ eines
+                    Objekts angibt.</li>
+                <li><strong>Object.assign():</strong> Kombiniert Eigenschaften von einem oder mehreren Quellobjekten in
+                    ein Zielobjekt.</li>
+                <li><strong>Object.create():</strong> Erstellt ein neues Objekt mit dem angegebenen Prototyp.</li>
+                <li><strong>Object.freeze():</strong> Verhindert Änderungen an einem Objekt, indem seine Eigenschaften
+                    schreibgeschützt gemacht werden.</li>
+                <li><strong>Object.seal():</strong> Verhindert das Löschen von Eigenschaften eines Objekts, aber
+                    ermöglicht das Ändern ihrer Werte.</li>
+                <li><strong>Object.getPrototypeOf():</strong> Gibt den Prototyp eines Objekts zurück.</li>
+                <li><strong>Object.setPrototypeOf():</strong> Legt den Prototyp eines Objekts fest.</li>
+                <li><strong>setTimeout():</strong> Führt eine Funktion einmalig nach einer bestimmten Verzögerung aus.
+                </li>
+                <li><strong>setInterval():</strong> Führt eine Funktion in regelmäßigen Abständen aus.</li>
+                <li><strong>clearTimeout():</strong> Bricht eine mit setTimeout() geplante Ausführung ab.</li>
+                <li><strong>clearInterval():</strong> Bricht eine mit setInterval() geplante Ausführung ab.</li>
+                <li><strong>localStorage:</strong> Ein JavaScript-Objekt zur Speicherung von Schlüssel-Wert-Paaren lokal
+                    im Browser.</li>
+                <li><strong>sessionStorage:</strong> Ein JavaScript-Objekt zur temporären Speicherung von
+                    Schlüssel-Wert-Paaren im Browser während der Sitzung.</li>
+                <li><strong>XMLHttpRequest:</strong> Ein JavaScript-Objekt zur Durchführung von HTTP-Anforderungen.</li>
+                <li><strong>fetch():</strong> Ermöglicht asynchrone HTTP-Anfragen und den Umgang mit den Antwortdaten
+                    als Promises.</li>
+                <li><strong>try-catch:</strong> Ermöglicht das Abfangen und Behandeln von Ausnahmen (Fehler) in
+                    JavaScript.</li>
+                <li><strong>throw:</strong> Löst eine eigene Ausnahme aus.</li>
+                <li><strong>Promise:</strong> Ein JavaScript-Objekt, das die asynchrone Verarbeitung von Daten
+                    repräsentiert und den Umgang mit zukünftigen Werten ermöglicht.</li>
+                <li><strong>async/await:</strong> Ein Konstrukt in JavaScript, das die asynchrone Verarbeitung mit
+                    Promises vereinfacht.</li>
+            </ul>
+            </article>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
