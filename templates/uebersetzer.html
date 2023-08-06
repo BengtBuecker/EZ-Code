@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EZ-Code Übersetzer</title>
+    <title>Übersetzer</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="{{url_for('static', filename='home')}}" class="logo"><img
+                    src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"
+                    alt="EZ-Code Logo" /></a>
+            <ul>
+                <li class="dropdown"><a href="#">Lexikon</a>
+                    <ul class="dropdown-content">
+                        <li><a href="{{url_for('lexikonCss')}}">CSS</a></li>
+                        <li><a href="{{url_for('lexikonHtml')}}">html</a></li>
+                        <li><a href="{{url_for('lexikonJs')}}">java script</a></li>
+                    </ul>
+                    <li><a href="{{url_for('uebersetzer')}}">Übersetzer</a></li>
+                    <li><a href="{{url_for('challenges')}}">Challenges</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Programmieren <br> war noch nie <br> einfacher.</h1>
+    <form action="/process_input" method="POST">
+        <label for="user_input">Dein Code:</label>
+        <input type="text" name="user_input" rows="10" cols="50" id="user_input" required>
+        <button type="submit">Erkläre diesen Code</button>
+    </form>
+    <div id="output_section"></div>
+</body>
+<script>
+    var outputDiv = document.getElementById('output_section');
+    var output = '{{ output}}';
+    outputDiv.innerHTML = output;
+</script>
+</html>
