@@ -8,7 +8,7 @@ app = Flask(__name__, template_folder=template_dir)
 
 @app.route('/')
 def index():
-    return render_template('uebersetzer.html')
+    return render_template('home.html')
 @app.route('/uebersetzer')
 def uebersetzer():
     return render_template('uebersetzer.html')
@@ -45,7 +45,7 @@ def process_input():
   } 
   r = llama.run(api_request_json)
   r2=json.dumps(r.json())
-  r3=r2[r2.find("content")+10:r2.find("function_call")].strip().replace('\\n',' ').replace('\\',' ')
+  r3=r2[r2.find("content")+11:r2.find("function_call")-1].strip().replace('\\n',' ').replace('\\',' ')
   
   return render_template('uebersetzer.html', output=r3)
 if __name__ == '__main__':

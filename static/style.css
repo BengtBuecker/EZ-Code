@@ -258,3 +258,7 @@ ul li a {
 .controls button:hover {
 	background-color: #eee;
 }
+#user_input{
+  display: inline-block;
+  width:50%;
+}

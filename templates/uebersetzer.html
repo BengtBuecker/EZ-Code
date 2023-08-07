@@ -5,6 +5,7 @@
     <title>EZ-Code Übersetzer</title>
     <title>Übersetzer</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='loader.css')}}">
 </head>
 
 <body>
@@ -28,13 +29,38 @@
     <h1>Programmieren <br> war noch nie <br> einfacher.</h1>
     <form action="/process_input" method="POST">
         <label for="user_input">Dein Code:</label>
-        <input type="text" name="user_input" rows="10" cols="50" id="user_input" required>
-        <button type="submit">Erkläre diesen Code</button>
+        <input type="text" contenteditable="true" name="user_input" id="user_input" required>
+        <button id="generateButton" type="submit">Erkläre diesen Code</button>
     </form>
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster" id="loader">
+        <div class="wheel"></div>
+        <div class="hamster">
+            <div class="hamster__body">
+                <div class="hamster__head">
+                    <div class="hamster__ear"></div>
+                    <div class="hamster__eye"></div>
+                    <div class="hamster__nose"></div>
+                </div>
+                <div class="hamster__limb hamster__limb--fr"></div>
+                <div class="hamster__limb hamster__limb--fl"></div>
+                <div class="hamster__limb hamster__limb--br"></div>
+                <div class="hamster__limb hamster__limb--bl"></div>
+                <div class="hamster__tail"></div>
+            </div>
+        </div>
+        <div class="spoke"></div>
+    </div>
     <div id="output_section"></div>
 </body>
 <script>
     var outputDiv = document.getElementById('output_section');
+    const loader = document.getElementById('loader');
+    generateButton.addEventListener('click', () => {
+            loader.style.display = 'block'; 
+            setTimeout(() => {
+                loader.style.display = 'none'; 
+            }, 10000);
+        });
     var output = '{{ output}}';
     outputDiv.innerHTML = output;
 </script>
