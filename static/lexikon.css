@@ -212,7 +212,8 @@ button:focus {
 .ergebnisse ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-	hyphens: auto; 
-	text-align: justify
+    align-items: start;
+    max-width: 650px;
+	  hyphens: auto; 
+	  text-align: justify
 }
