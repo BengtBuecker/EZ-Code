@@ -5,6 +5,7 @@
     <title>EZ-Code Übersetzer</title>
     <title>Übersetzer</title>
     <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/uebersetzer.css">
     <link rel="stylesheet" type="text/css" href="../static/loader.css">
     <link rel="icon" href="../static/favicon.png" />
 </head>
@@ -50,18 +51,24 @@
         </div>
         <div class="spoke"></div>
     </div>
-    <div id="output_section"></div>
+    <div id="output_section"> <script>
+        var outputDiv = document.getElementById('output_section');
+        var output = ''; // Replace with actual output
+        if (output !== '') {
+            outputDiv.style.display = 'block';
+            outputDiv.innerHTML = output;
+        } else {
+            outputDiv.style.display = 'none';
+        }
+    </script></div>
 </body>
 <script>
-    var outputDiv = document.getElementById('output_section');
-    const loader = document.getElementById('loader');
+    var loader = document.getElementById('loader');
     generateButton.addEventListener('click', () => {
-            loader.style.display = 'block'; 
-            setTimeout(() => {
-                loader.style.display = 'none'; 
-            }, 130000);
-        });
-    var output = '{{ output}}';
-    outputDiv.innerHTML = output;
+        loader.style.display = 'block';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 130000);
+    });
 </script>
 </html>

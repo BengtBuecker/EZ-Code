@@ -1,0 +1,100 @@
+/*
+CSS HEX 
+--white: #ffffffff;
+--cambridge-blue: #81a684ff;
+--viridian: #57886cff;
+--feldgrau: #466060ff;
+--rich-black: #0e0f19ff;
+
+CSS HSL 
+--white: hsla(0, 0%, 100%, 1);
+--cambridge-blue: hsla(125, 17%, 58%, 1);
+--viridian: hsla(146, 22%, 44%, 1);
+--feldgrau: hsla(180, 16%, 33%, 1);
+--rich-black: hsla(235, 28%, 8%, 1);
+
+SCSS HEX 
+$white: #ffffffff;
+$cambridge-blue: #81a684ff;
+$viridian: #57886cff;
+$feldgrau: #466060ff;
+$rich-black: #0e0f19ff;
+
+SCSS HSL 
+$white: hsla(0, 0%, 100%, 1);
+$cambridge-blue: hsla(125, 17%, 58%, 1);
+$viridian: hsla(146, 22%, 44%, 1);
+$feldgrau: hsla(180, 16%, 33%, 1);
+$rich-black: hsla(235, 28%, 8%, 1);
+
+SCSS RGB 
+$white: rgba(255, 255, 255, 1);
+$cambridge-blue: rgba(129, 166, 132, 1);
+$viridian: rgba(87, 136, 108, 1);
+$feldgrau: rgba(70, 96, 96, 1);
+$rich-black: rgba(14, 15, 25, 1);
+
+SCSS Gradient 
+$gradient-top: linear-gradient(0deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-right: linear-gradient(90deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-bottom: linear-gradient(180deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-left: linear-gradient(270deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-top-right: linear-gradient(45deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-bottom-right: linear-gradient(135deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-top-left: linear-gradient(225deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-bottom-left: linear-gradient(315deg, #ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+$gradient-radial: radial-gradient(#ffffffff, #81a684ff, #57886cff, #466060ff, #0e0f19ff);
+
+*/
+
+/* Main content styles */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button#generateButton {
+    background-color: #57886cff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Loader styles */
+.wheel-and-hamster {
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+}
+
+/* Output section styles */
+#output_section {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+}
