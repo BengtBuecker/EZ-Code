@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{url_for('static', filename='lexikon.css')}}"/>
+    <link rel="stylesheet" href="../static/lexikon.css"/>
+    <link rel="icon" href="../static/favicon.png" />
     <title>Lexikon-html</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="{{url_for('home')}}" class="logo"
+        <a href="../templates/home.html" class="logo"
           ><img
-            src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"
+            src="../static/ez-code-high-resolution-logo-color-on-transparent-background.png"
             alt="EZ-Code Logo"
         /></a>
         <ul>
           <li class="dropdown">
             <a href="#">Lexikon</a>
             <ul class="dropdown-content">
-              <li><a href="{{url_for('lexikonCss')}}">CSS</a></li>
-              <li><a href="{{url_for('lexikonJs')}}">java script</a></li>
+              <li><a href="../templates/lexikon-css.html">CSS</a></li>
+              <li><a href="../templates/lexikon-js.html">java script</a></li>
           </ul>
-          <li><a href="{{url_for('uebersetzer')}}">Übersetzer</a></li>
-          <li><a href="{{url_for('challenges')}}">Challenges</a></li>
+          <li><a href="../templates/uebersetzer.html">Übersetzer</a></li>
+          <li><a href="../templates/challenges.html">Challenges</a></li>
         </ul>
       </nav>
     </header>
@@ -35,7 +36,7 @@
           placeholder="Suche nach html-Befehlen..."
         />
         <button><i class="fas fa-search"></i></button>
-        <script src="{{url_for('static', filename='search.js')}}"></script>
+        <script src="../static/search.js"></script>
       </section>
       <section class="ergebnisse">
         <ul id="commandList">

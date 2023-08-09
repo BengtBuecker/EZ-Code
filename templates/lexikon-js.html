@@ -4,34 +4,37 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{url_for('static', filename='lexikon.css')}}" />
+    <link rel="stylesheet" href="../static/lexikon.css" />
+    <link rel="icon" href="../static/favicon.png" />
     <title>Lexikon-js</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="{{url_for('home')}}" class="logo"><img
-                    src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"
-                    alt="EZ-Code Logo" /></a>
-            <ul>
-                <li class="dropdown">
-                    <a href="#">Lexikon</a>
-                    <ul class="dropdown-content">
-                        <li><a href="{{url_for('lexikonCss')}}">CSS</a></li>
-                        <li><a href="{{url_for('lexikonHtml')}}">html</a></li>
-                    </ul>
-                    <li><a href="{{url_for('uebersetzer')}}">Übersetzer</a></li>
-                    <li><a href="{{url_for('challenges')}}">Challenges</a></li>
+          <a href="../templates/home.html" class="logo"
+            ><img
+              src="../static/ez-code-high-resolution-logo-color-on-transparent-background.png"
+              alt="EZ-Code Logo"
+          /></a>
+          <ul>
+            <li class="dropdown">
+              <a href="#">Lexikon</a>
+              <ul class="dropdown-content">
+                <li><a href="../templates/lexikon-css.html">CSS</a></li>
+                <li><a href="../templates/lexikon-html.html">html</a></li>
             </ul>
+            <li><a href="../templates/uebersetzer.html">Übersetzer</a></li>
+            <li><a href="../templates/challenges.html">Challenges</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
     <main>
         <section class="einleitung">JavaScript-Lexikon</section>
         <section class="sucher">
             <input type="text" id="searchInput" placeholder="Suche nach js-Befehlen..." />
             <button><i class="fas fa-search"></i></button>
-            <script src="{{url_for('static', filename='search.js')}}"></script>
+            <script src="../static/search.js"></script>
         </section>
         <section class="ergebnisse">
             <ul id="commandList">
