@@ -10,19 +10,18 @@
   <body>
     <header>
       <nav>
-        <a href="../templates/home.html" class="logo"
-          ><img
-            src="../static/ez-code-high-resolution-logo-color-on-transparent-background.png"
+        <a href="{{url_for('home')}}" class="logo"><img
+          src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"
             alt="EZ-Code Logo"
         /></a>
         <ul>
           <li class="dropdown">
             <a href="#">Lexikon</a>
             <ul class="dropdown-content">
-              <li><a href="../templates/lexikon-html.html">html</a></li>
-              <li><a href="../templates/lexikon-js.html">java script</a></li>
+              <li><a href="{{url_for('lexikonHtml')}}">html</a></li>
+              <li><a href="{{url_for('lexikonJs')}}">java script</a></li>
           </ul>
-          <li><a href="../templates/uebersetzer.html">Übersetzer</a></li>
+          <li><a href="{{url_for('uebersetzer')}}">Übersetzer</a></li>
           <!-- <li><a href="challenges.html">Challenges</a></li> -->
         </ul>
       </nav>
@@ -36,7 +35,7 @@
           placeholder="Suche nach CSS-Befehlen..."
         />
         <button><i class="fas fa-search"></i></button>
-        <script src="../static/search.js"></script>
+        <script src="{{url_for('static', filename='search.js')}}"></script>
       </section>
       <section class="ergebnisse">
         <ul id="commandList">

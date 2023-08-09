@@ -12,23 +12,23 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script src="{{url_for('static', filename='script.js')}}"></script>
-  <script src="../static/search.js"></script>
+  <script src="{{url_for('static', filename='search.js')}}"></script>
   <title>EZ-Code</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="#" class="logo"><img src="../static/ez-code-high-resolution-logo-color-on-transparent-background.png"
-          alt="EZ-Code Logo" /></a>
+      <a href="{{url_for('home')}}" class="logo"><img
+        src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"></a>
       <ul>
         <li class="dropdown"><a href="#">Lexikon</a>
           <ul class="dropdown-content">
-            <li><a href="lexikon-css.html">CSS</a></li>
-            <li><a href="lexikon-html.html">html</a></li>
-            <li><a href="lexikon-js.html">java script</a></li>
+            <li><a href="{{url_for('lexikonCss')}}">CSS</a></li>
+            <li><a href="{{url_for('lexikonHtml')}}">html</a></li>
+            <li><a href="{{url_for('lexikonJs')}}">java script</a></li>
         </ul>
-        <li><a href="uebersetzer.html">Übersetzer</a></li>
+        <li><a href="{{url_for('uebersetzer')}}">Übersetzer</a></li>
         <!-- <li><a href="challenges.html">Challenges</a></li> -->
       </ul>
     </nav>
@@ -53,7 +53,7 @@
     <article class="home-2">
       <div class="row center">
         <div class="column">
-          <div class="bengt"><img src="../static/IMG_20230726_134708_190.jpg"
+          <div class="bengt"><img src="{{url_for('static', filename='IMG_20230726_134708_190.jpg')}}"
               alt="Portrait von Bengt Bücker bei MUNOL 2023" />
             <h2>Bengt Oke Bücker</h2>
             <p class="texte-dev">
@@ -105,7 +105,7 @@
 
         </div>
         <div class="column-digexp">
-          <img src="../static/digexp.png" alt="Quelle: https://digital-explorer-edu.de/images/Formate.png">
+          <img src="{{url_for('static', filename='digexp.png')}}" alt="Quelle: https://digital-explorer-edu.de/images/Formate.png">
         </div>
       </div>
     </article>

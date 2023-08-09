@@ -13,14 +13,15 @@
 <body>
     <header>
         <nav>
-          <a href="home.html" class="logo"><img src="../static/ez-code-high-resolution-logo-color-on-transparent-background.png"
+            <a href="{{url_for('home')}}" class="logo"><img
+                src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"
               alt="EZ-Code Logo" /></a>
           <ul>
             <li class="dropdown"><a href="#">Lexikon</a>
               <ul class="dropdown-content">
-                <li><a href="lexikon-css.html">CSS</a></li>
-                <li><a href="lexikon-html.html">html</a></li>
-                <li><a href="lexikon-js.html">java script</a></li>
+                <li><a href="{{url_for('lexikonCss')}}">CSS</a></li>
+                <li><a href="{{url_for('lexikonHtml')}}">html</a></li>
+                <li><a href="{{url_for('lexikonJs')}}">java script</a></li>
             </ul>
             <li><a href="#">Übersetzer</a></li>
             <!-- <li><a href="challenges.html">Challenges</a></li> -->
@@ -68,7 +69,7 @@
         loader.style.display = 'block';
         setTimeout(() => {
             loader.style.display = 'none';
-        }, 130000);
+        }, 13000);
     });
 </script>
 </html>
