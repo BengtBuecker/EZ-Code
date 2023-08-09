@@ -52,24 +52,19 @@
         </div>
         <div class="spoke"></div>
     </div>
-    <div id="output_section"> <script>
-        var outputDiv = document.getElementById('output_section');
-        var output = ''; // Replace with actual output
-        if (output !== '') {
-            outputDiv.style.display = 'block';
-            outputDiv.innerHTML = output;
-        } else {
-            outputDiv.style.display = 'none';
-        }
-    </script></div>
+    <div id="output_section"></div>
 </body>
 <script>
-    var loader = document.getElementById('loader');
+    var outputDiv = document.getElementById('output_section');
+    const loader = document.getElementById('loader');
     generateButton.addEventListener('click', () => {
-    loader.style.display = 'block';
-        setTimeout(() => {
-            loader.style.display = 'none';
-        }, 130000);
-    });
+            loader.style.display = 'block'; 
+            setTimeout(() => {
+                loader.style.display = 'none'; 
+            }, 10000);
+            }, 130000);
+        });
+    var output = '{{ output}}';
+    outputDiv.innerHTML = output;
 </script>
 </html>
