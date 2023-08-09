@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript-Code-Explainer</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>JavaScript-Code-Explainer</h1>
+    <textarea id="codeInput" rows="10" cols="50"></textarea>
+    <button onclick="explainCode()">Erklären</button>
+    <div id="output"></div>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

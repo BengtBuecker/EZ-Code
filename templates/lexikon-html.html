@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='lexikon.css')}}"/>
+    <title>Lexikon-html</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="{{url_for('home')}}" class="logo"
+          ><img
+            src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"
+            alt="EZ-Code Logo"
+        /></a>
+        <ul>
+          <li class="dropdown">
+            <a href="#">Lexikon</a>
+            <ul class="dropdown-content">
+              <li><a href="{{url_for('lexikonCss')}}">CSS</a></li>
+              <li><a href="{{url_for('lexikonJs')}}">java script</a></li>
+          </ul>
+          <li><a href="{{url_for('uebersetzer')}}">Übersetzer</a></li>
+          <li><a href="{{url_for('challenges')}}">Challenges</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="einleitung">html-Lexikon</section>
+      <section class="sucher">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Suche nach html-Befehlen..."
+        />
+        <button><i class="fas fa-search"></i></button>
+        <script src="{{url_for('static', filename='search.js')}}"></script>
+      </section>
+      <section class="ergebnisse">
+        <ul id="commandList">
+          <li>
+            <strong>&lt;!DOCTYPE&gt;:</strong> Definiert den Dokumententyp und
+            die Version von HTML.
+          </li>
+          <li>
+            <strong>&lt;html&gt;:</strong> Das Wurzelelement eines
+            HTML-Dokuments.
+          </li>
+          <li>
+            <strong>&lt;head&gt;:</strong> Enthält metadatenbezogene
+            Informationen über das Dokument.
+          </li>
+          <li>
+            <strong>&lt;title&gt;:</strong> Setzt den Titel des HTML-Dokuments,
+            der im Browser-Titel angezeigt wird.
+          </li>
+          <li>
+            <strong>&lt;meta&gt;:</strong> Definiert Metadaten über das
+            Dokument, wie Zeichensatz, Autor oder Beschreibung.
+          </li>
+          <li>
+            <strong>&lt;link&gt;:</strong> Verknüpft das Dokument mit externen
+            Ressourcen wie CSS-Dateien oder Favicons.
+          </li>
+          <li>
+            <strong>&lt;style&gt;:</strong> Enthält CSS-Regeln, die direkt im
+            HTML-Dokument definiert sind.
+          </li>
+          <li>
+            <strong>&lt;body&gt;:</strong> Enthält den sichtbaren Inhalt des
+            Dokuments.
+          </li>
+          <li>
+            <strong>&lt;header&gt;:</strong> Enthält Überschriften und
+            Kopfzeilen für eine Seite oder eine Sektion.
+          </li>
+          <li>
+            <strong>&lt;nav&gt;:</strong> Enthält Navigationslinks innerhalb
+            eines Dokuments.
+          </li>
+          <li>
+            <strong>&lt;main&gt;:</strong> Enthält den Hauptinhalt einer Seite.
+          </li>
+          <li>
+            <strong>&lt;section&gt;:</strong> Markiert einen Abschnitt oder eine
+            Gruppe von Inhalten.
+          </li>
+          <li>
+            <strong>&lt;article&gt;:</strong> Markiert einen eigenständigen
+            Artikel oder eine in sich geschlossene Einheit.
+          </li>
+          <li>
+            <strong>&lt;aside&gt;:</strong> Enthält Inhalte, die sich von dem
+            Hauptinhalt unterscheiden (z. B. Seitenleisten).
+          </li>
+          <li>
+            <strong>&lt;footer&gt;:</strong> Enthält Fußzeileninformationen oder
+            Inhalte am Ende eines Dokuments oder einer Sektion.
+          </li>
+          <li>
+            <strong>&lt;h1&gt; bis &lt;h6&gt;:</strong> Überschriften mit
+            unterschiedlicher Bedeutung und visueller Größe (h1 ist die
+            wichtigste).
+          </li>
+          <li>
+            <strong>&lt;p&gt;:</strong> Absatz-Element, um Textabsätze zu
+            definieren.
+          </li>
+          <li><strong>&lt;br&gt;:</strong> Einfacher Zeilenumbruch.</li>
+          <li>
+            <strong>&lt;a&gt;:</strong> Hyperlink-Element, um Links zu anderen
+            Seiten oder Ressourcen zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;img&gt;:</strong> Bild-Element, um Bilder in das
+            Dokument einzufügen.
+          </li>
+          <li>
+            <strong>&lt;ul&gt;:</strong> Ungeordnete Liste, um eine Liste ohne
+            Nummerierung zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;ol&gt;:</strong> Geordnete Liste, um eine nummerierte
+            Liste zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;li&gt;:</strong> Listenpunkt, um Elemente in einer Liste
+            zu definieren.
+          </li>
+          <li>
+            <strong>&lt;table&gt;:</strong> Tabellen-Element, um eine Tabelle zu
+            erstellen.
+          </li>
+          <li>
+            <strong>&lt;tr&gt;:</strong> Tabellenzeile, um eine Zeile in einer
+            Tabelle zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;th&gt;:</strong> Tabellenkopfzellen, um die
+            Überschriften einer Tabelle zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;td&gt;:</strong> Tabellen-Datenzellen, um Daten in einer
+            Tabelle zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;form&gt;:</strong> Formular-Element, um ein
+            HTML-Formular zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;input&gt;:</strong> Eingabe-Element, um verschiedene
+            Arten von Eingabefeldern zu erstellen (z. B. Text, Checkbox, Radio).
+          </li>
+          <li>
+            <strong>&lt;textarea&gt;:</strong> Textbereich-Element, um einen
+            mehrzeiligen Texteingabebereich zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;button&gt;:</strong> Schaltflächen-Element, um eine
+            Schaltfläche zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;label&gt;:</strong> Label-Element, um eine Beschriftung
+            für ein Eingabeelement zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;select&gt;:</strong> Auswahllisten-Element, um eine
+            Dropdown-Liste zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;option&gt;:</strong> Option-Element, um eine Option in
+            einer Dropdown-Liste zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;div&gt;:</strong> Block-Container-Element, um Gruppen
+            von Inhalten zu erstellen oder zu formatieren.
+          </li>
+          <li>
+            <strong>&lt;span&gt;:</strong> Inline-Container-Element, um einen
+            Teil des Textes oder eine Inline-Formatierung zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;iframe&gt;:</strong> Inline-Frame-Element, um ein
+            eingebettetes Fenster zu erstellen, das eine andere Webseite
+            anzeigt.
+          </li>
+          <li>
+            <strong>&lt;audio&gt;:</strong> Audio-Element, um Audioinhalte wie
+            Musik oder Soundeffekte einzubetten.
+          </li>
+          <li>
+            <strong>&lt;video&gt;:</strong> Video-Element, um Videoinhalte
+            einzubetten.
+          </li>
+          <li>
+            <strong>&lt;svg&gt;:</strong> SVG-Element, um skalierbare
+            Vektorgrafiken einzubetten.
+          </li>
+          <li>
+            <strong>&lt;canvas&gt;:</strong> Canvas-Element, um dynamische
+            Grafiken und Animationen zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;script&gt;:</strong> Script-Element, um JavaScript-Code
+            einzubetten oder auf externe Skripte zu verlinken.
+          </li>
+          <li>
+            <strong>&lt;noscript&gt;:</strong> Noscript-Element, um alternative
+            Inhalte anzuzeigen, wenn JavaScript im Browser deaktiviert ist.
+          </li>
+          <li>
+            <strong>&lt;style&gt;:</strong> Style-Element, um CSS-Regeln im
+            Dokument einzubetten.
+          </li>
+          <li>
+            <strong>&lt;meta&gt;:</strong> Meta-Element, um Metadaten im
+            Dokument einzubetten (z. B. Zeichensatz).
+          </li>
+          <li>
+            <strong>&lt;base&gt;:</strong> Base-Element, um die Basis-URL für
+            relative URLs im Dokument festzulegen.
+          </li>
+          <li>
+            <strong>&lt;link&gt;:</strong> Link-Element, um Verknüpfungen zu
+            externen Ressourcen wie CSS-Dateien herzustellen.
+          </li>
+          <li>
+            <strong>&lt;img&gt;:</strong> Img-Element, um Bilder in das Dokument
+            einzufügen.
+          </li>
+          <li>
+            <strong>&lt;area&gt;:</strong> Area-Element, um einen verweisbaren
+            Bereich in einem Bild-Map zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;map&gt;:</strong> Map-Element, um eine Image-Map zu
+            erstellen.
+          </li>
+          <li>
+            <strong>&lt;iframe&gt;:</strong> Iframe-Element, um ein
+            eingebettetes Fenster zu erstellen, das eine andere Webseite
+            anzeigt.
+          </li>
+          <li>
+            <strong>&lt;embed&gt;:</strong> Embed-Element, um externe Inhalte
+            wie Multimedia einzubetten.
+          </li>
+          <li>
+            <strong>&lt;object&gt;:</strong> Object-Element, um ein
+            eingebettetes Objekt wie ein Flash-Video einzufügen.
+          </li>
+          <li>
+            <strong>&lt;param&gt;:</strong> Param-Element, um Parameter für ein
+            eingebettetes Objekt festzulegen.
+          </li>
+          <li>
+            <strong>&lt;source&gt;:</strong> Source-Element, um alternative
+            Medienquellen für das Video- oder Audio-Element bereitzustellen.
+          </li>
+          <li>
+            <strong>&lt;track&gt;:</strong> Track-Element, um Untertitel oder
+            andere textbasierte Daten für Video-/Audio-Elemente zu definieren.
+          </li>
+          <li>
+            <strong>&lt;canvas&gt;:</strong> Canvas-Element, um dynamische
+            Grafiken und Animationen zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;script&gt;:</strong> Script-Element, um JavaScript-Code
+            einzubetten oder auf externe Skripte zu verlinken.
+          </li>
+          <li>
+            <strong>&lt;noscript&gt;:</strong> Noscript-Element, um alternative
+            Inhalte anzuzeigen, wenn JavaScript im Browser deaktiviert ist.
+          </li>
+          <li>
+            <strong>&lt;del&gt;:</strong> Del-Element, um gelöschten Text
+            darzustellen.
+          </li>
+          <li>
+            <strong>&lt;ins&gt;:</strong> Ins-Element, um eingefügten Text
+            darzustellen.
+          </li>
+          <li>
+            <strong>&lt;header&gt;:</strong> Header-Element, um den Kopfbereich
+            einer Seite oder eines Abschnitts zu definieren.
+          </li>
+          <li>
+            <strong>&lt;footer&gt;:</strong> Footer-Element, um den Fußbereich
+            einer Seite oder eines Abschnitts zu definieren.
+          </li>
+          <li>
+            <strong>&lt;main&gt;:</strong> Main-Element, um den Hauptinhalt
+            einer Seite zu definieren.
+          </li>
+          <li>
+            <strong>&lt;nav&gt;:</strong> Nav-Element, um eine Navigationsleiste
+            zu definieren.
+          </li>
+          <li>
+            <strong>&lt;article&gt;:</strong> Article-Element, um einen in sich
+            geschlossenen Artikel zu definieren.
+          </li>
+          <li>
+            <strong>&lt;section&gt;:</strong> Section-Element, um eine Sektion
+            oder einen Abschnitt zu definieren.
+          </li>
+          <li>
+            <strong>&lt;aside&gt;:</strong> Aside-Element, um Inhalte zu
+            definieren, die sich von dem Hauptinhalt unterscheiden.
+          </li>
+          <li>
+            <strong>&lt;figure&gt;:</strong> Figure-Element, um eine Abbildung
+            mit zugehöriger Beschriftung zu definieren.
+          </li>
+          <li>
+            <strong>&lt;figcaption&gt;:</strong> Figcaption-Element, um eine
+            Beschriftung für eine Abbildung zu definieren.
+          </li>
+          <li>
+            <strong>&lt;h1&gt; bis &lt;h6&gt;:</strong> Überschriften mit
+            unterschiedlicher Bedeutung und visueller Größe (h1 ist die
+            wichtigste).
+          </li>
+          <li>
+            <strong>&lt;p&gt;:</strong> Paragraph-Element, um Textabsätze zu
+            definieren.
+          </li>
+          <li>
+            <strong>&lt;br&gt;:</strong> Break-Element, um einen Zeilenumbruch
+            einzufügen.
+          </li>
+          <li>
+            <strong>&lt;hr&gt;:</strong> Horizontal Rule-Element, um eine
+            horizontale Trennlinie zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;pre&gt;:</strong> Preformatted-Element, um
+            vorformatierten Text darzustellen.
+          </li>
+          <li>
+            <strong>&lt;blockquote&gt;:</strong> Blockquote-Element, um ein
+            längeres Zitat oder Textabschnitt zu kennzeichnen.
+          </li>
+          <li>
+            <strong>&lt;q&gt;:</strong> Q-Element, um einen kurzen in den Text
+            eingebetteten Textabschnitt zu kennzeichnen.
+          </li>
+          <li>
+            <strong>&lt;abbr&gt;:</strong> Abbr-Element, um eine Abkürzung oder
+            ein Akronym zu kennzeichnen.
+          </li>
+          <li>
+            <strong>&lt;cite&gt;:</strong> Cite-Element, um den Titel eines
+            Werks oder die Quelle eines Zitats zu kennzeichnen.
+          </li>
+          <li>
+            <strong>&lt;code&gt;:</strong> Code-Element, um Computercode
+            darzustellen.
+          </li>
+          <li>
+            <strong>&lt;em&gt;:</strong> Emphasis-Element, um Text hervorzuheben
+            oder zu betonen.
+          </li>
+          <li>
+            <strong>&lt;strong&gt;:</strong> Strong-Element, um Text besonders
+            stark hervorzuheben.
+          </li>
+          <li>
+            <strong>&lt;small&gt;:</strong> Small-Element, um Text in kleinerer
+            Schriftgröße darzustellen.
+          </li>
+          <li>
+            <strong>&lt;sub&gt;:</strong> Subscript-Element, um Text als
+            Tiefstellen darzustellen.
+          </li>
+          <li>
+            <strong>&lt;sup&gt;:</strong> Superscript-Element, um Text als
+            Hochstellen darzustellen.
+          </li>
+          <li>
+            <strong>&lt;i&gt;:</strong> Italic-Element, um Text kursiv
+            darzustellen (Nicht zur semantischen Bedeutung verwenden).
+          </li>
+          <li>
+            <strong>&lt;b&gt;:</strong> Bold-Element, um Text fett darzustellen
+            (Nicht zur semantischen Bedeutung verwenden).
+          </li>
+          <li>
+            <strong>&lt;u&gt;:</strong> Underline-Element, um Text zu
+            unterstreichen (Nicht zur semantischen Bedeutung verwenden).
+          </li>
+          <li>
+            <strong>&lt;s&gt;:</strong> Strike-Element, um Text zu
+            durchstreichen (Nicht zur semantischen Bedeutung verwenden).
+          </li>
+          <li>
+            <strong>&lt;mark&gt;:</strong> Mark-Element, um Text mit einer
+            Markierung zu versehen.
+          </li>
+          <li>
+            <strong>&lt;time&gt;:</strong> Time-Element, um ein Datum oder eine
+            Zeit darzustellen oder zu kennzeichnen.
+          </li>
+          <li>
+            <strong>&lt;progress&gt;:</strong> Progress-Element, um den
+            Fortschritt eines Vorgangs anzuzeigen.
+          </li>
+          <li>
+            <strong>&lt;meter&gt;:</strong> Meter-Element, um einen Messwert
+            innerhalb eines bekannten Bereichs anzuzeigen.
+          </li>
+          <li>
+            <strong>&lt;details&gt;:</strong> Details-Element, um zusätzliche
+            Details anzuzeigen oder auszublenden.
+          </li>
+          <li>
+            <strong>&lt;summary&gt;:</strong> Summary-Element, um eine
+            Zusammenfassung oder Überschrift für ein Details-Element anzugeben.
+          </li>
+          <li>
+            <strong>&lt;input type="text"&gt;:</strong> Eingabefeld für einzelne
+            Textzeile.
+          </li>
+          <li>
+            <strong>&lt;input type="password"&gt;:</strong> Eingabefeld für
+            Passwörter (verdeckte Eingabe).
+          </li>
+          <li>
+            <strong>&lt;input type="email"&gt;:</strong> Eingabefeld für
+            E-Mail-Adressen (validiert die Eingabe).
+          </li>
+          <li>
+            <strong>&lt;input type="number"&gt;:</strong> Eingabefeld für
+            numerische Werte (validiert die Eingabe).
+          </li>
+          <li>
+            <strong>&lt;input type="checkbox"&gt;:</strong> Checkbox zum
+            Ankreuzen von Optionen.
+          </li>
+          <li>
+            <strong>&lt;input type="radio"&gt;:</strong> Radiobuttons, um eine
+            von mehreren Optionen auszuwählen.
+          </li>
+          <li>
+            <strong>&lt;input type="submit"&gt;:</strong> Schaltfläche, um
+            Formulardaten zu senden.
+          </li>
+          <li>
+            <strong>&lt;input type="reset"&gt;:</strong> Schaltfläche, um
+            Formulardaten zurückzusetzen.
+          </li>
+          <li>
+            <strong>&lt;input type="button"&gt;:</strong> Schaltfläche für
+            benutzerdefinierte Aktionen (keine Formularfunktion).
+          </li>
+          <li>
+            <strong>&lt;textarea&gt;:</strong> Mehrzeiliges Eingabefeld für
+            längere Texteingaben.
+          </li>
+          <li>
+            <strong>&lt;select&gt;:</strong> Dropdown-Liste für die Auswahl
+            einer Option aus einer Liste.
+          </li>
+          <li>
+            <strong>&lt;option&gt;:</strong> Option in einer Dropdown-Liste oder
+            Auswahlliste.
+          </li>
+          <li>
+            <strong>&lt;optgroup&gt;:</strong> Gruppe von Optionen in einer
+            Dropdown-Liste.
+          </li>
+          <li>
+            <strong>&lt;fieldset&gt;:</strong> Gruppierung von Elementen in
+            einem Formular.
+          </li>
+          <li>
+            <strong>&lt;legend&gt;:</strong> Legende oder Titel für ein
+            &lt;fieldset&gt;.
+          </li>
+          <li>
+            <strong>&lt;label&gt;:</strong> Label-Element für ein
+            Eingabeelement, um eine Beschriftung zu definieren.
+          </li>
+          <li>
+            <strong>&lt;button&gt;:</strong> Schaltfläche, um eine interaktive
+            Schaltfläche zu erstellen.
+          </li>
+          <li>
+            <strong>&lt;button type="submit"&gt;:</strong> Schaltfläche zum
+            Senden von Formulardaten.
+          </li>
+          <li>
+            <strong>&lt;button type="reset"&gt;:</strong> Schaltfläche zum
+            Zurücksetzen von Formulardaten.
+          </li>
+          <li>
+            <strong>&lt;button type="button"&gt;:</strong> Schaltfläche für
+            benutzerdefinierte Aktionen (keine Formularfunktion).
+          </li>
+          <li>
+            <strong>&lt;button type="reset"&gt;:</strong> Schaltfläche zum
+            Zurücksetzen von Formulardaten.
+          </li>
+          <li>
+            <strong>&lt;button type="button"&gt;:</strong> Schaltfläche für
+            benutzerdefinierte Aktionen (keine Formularfunktion).
+          </li>
+          <li>
+            <strong>&lt;button type="reset"&gt;:</strong> Schaltfläche zum
+            Zurücksetzen von Formulardaten.
+          </li>
+          <li>
+            <strong>&lt;button type="button"&gt;:</strong> Schaltfläche für
+            benutzerdefinierte Aktionen (keine Formularfunktion).
+          </li>
+          <li>
+            <strong>&lt;datalist&gt;:</strong> Datalist-Element, um eine
+            vordefinierte Liste von Optionen für ein Eingabefeld anzugeben.
+          </li>
+          <li>
+            <strong>&lt;keygen&gt;:</strong> Keygen-Element, um ein
+            Schlüsselpaar für Verschlüsselungszwecke zu generieren.
+          </li>
+          <li>
+            <strong>&lt;output&gt;:</strong> Output-Element, um das Ergebnis
+            einer Berechnung oder eines Skripts anzuzeigen.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
