@@ -87,6 +87,8 @@ button#generateButton {
     text-align: center;
     margin-top: 20px;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Output section styles */
