@@ -20,14 +20,14 @@
   <header>
     <nav>
       <a href="{{url_for('home')}}" class="logo"><img
-        src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"></a>
+          src="{{url_for('static', filename='ez-code-high-resolution-logo-color-on-transparent-background.png')}}"></a>
       <ul>
         <li class="dropdown"><a href="#">Lexikon</a>
           <ul class="dropdown-content">
             <li><a href="{{url_for('lexikonCss')}}">CSS</a></li>
             <li><a href="{{url_for('lexikonHtml')}}">html</a></li>
             <li><a href="{{url_for('lexikonJs')}}">java script</a></li>
-        </ul>
+          </ul>
         <li><a href="{{url_for('uebersetzer')}}">Übersetzer</a></li>
         <!-- <li><a href="challenges.html">Challenges</a></li> -->
       </ul>
@@ -57,16 +57,13 @@
               alt="Portrait von Bengt Bücker bei MUNOL 2023" />
             <h2>Bengt Oke Bücker</h2>
             <p class="texte-dev">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+              Moin! Mein Name ist Bengt Oke Bücker. Ich bin seit vielen Jahren in den Bereichen der Information
+              Technology tätig. Praktische Erfahrungen sammelte ich zum einem in meinen Praktika bei Dräger und der Cevo
+              Systemhaus AG, sowie als Head of IT bei den Model United Nations of Lübeck.<br>
+              Als ich die Werbung von Digital Explorer gesehen habe, musste ich also nicht lange überlegen. Das ist bereits ein Jahr her.
+              Seitdem nahm ich regelmäßig an Unterrichtseinheiten und Workshops rund um das Thema IT teil. Das Ergebnis
+              ist mein aufwendigstes Web-Projekt jemals: Diese Website. Sie dient dazu lernenden und fortgeschrittenen
+              beim Programmieren zu helfen. Viel Spaß!
             </p>
           </div>
         </div>
@@ -105,7 +102,8 @@
 
         </div>
         <div class="column-digexp">
-          <img src="{{url_for('static', filename='digexp.png')}}" alt="Quelle: https://digital-explorer-edu.de/images/Formate.png">
+          <img src="{{url_for('static', filename='digexp.png')}}"
+            alt="Quelle: https://digital-explorer-edu.de/images/Formate.png">
         </div>
       </div>
     </article>
