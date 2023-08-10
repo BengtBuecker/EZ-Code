@@ -6,7 +6,7 @@ Developer:
     Finn Kramme
 
 Nutzung:
-1. Lade den Code als zip-Datei herunter und öffne die entpackte Datei in VS-Code
+1. Lade den Code als zip-Datei herunter und öffne die entpackte Datei in VS-Code und starte ein neues Terminal
 2. Erstelle ein neues virtual enviroment:
      $ python -m venv venv
     $ . venv/Scripts/activate
