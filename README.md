@@ -4,13 +4,15 @@ Learn to code the easy way!
 Developer:
     Bengt Oke Bücker;
     Finn Kramme
+
 Nutzung:
-Erstelle ein neues virtual enviroment:
+1. Lade den Code als zip-Datei herunter und öffne die entpackte Datei in VS-Code
+2. Erstelle ein neues virtual enviroment:
      $ python -m venv venv
     $ . venv/Scripts/activate
-Installiere die benötigten python packages:
+3. Installiere die benötigten python packages:
     $ pip install -r requirements.txt
-Starte den Server:
+4. Starte den Server:
     $ python wsgi.py
-öffne im Browser die Website:
+5. Öffne im Browser die Website:
     http://127.0.0.1:5000/
