@@ -27,9 +27,6 @@ def lexikonJs():
 @app.route('/lexikonCss')
 def lexikonCss():
     return render_template('lexikon-css.html')
-@app.route('/challenges')
-def challenges():
-    return render_template('challenges.html')
 @app.route('/process_input', methods=['POST'])
 def process_input():
   user_input =request.form['user_input']
